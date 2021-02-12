@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Live Resume :: Contact</title>
+    <link href="https://fonts.googleapis.com/css?family=Mukta:300,400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/vendors/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/live-resume.css">
+</head>
+
+
+<body>
+    <header>
+        <button class="ml-auto mr-3 ml-md-0 mr-md-auto btn-header"><img src=""  class="btn-img"></button>
+        <nav class="collapsible-nav" id="collapsible-nav">
+            <a href="index.html" class="nav-link ">HOME</a>
+            <a href="portfolio.html" class="nav-link">PORTFOLIO</a>
+            <a href="contact.html" class="nav-link active">CONTACT</a>
+        </nav>
+        <button class="btn btn-menu-toggle btn-white rounded-circle" data-toggle="collapsible-nav"
+            data-target="collapsible-nav"><img src="assets/images/hamburger.svg" alt="hamburger"></button>
+    </header>
+
+    <div class="content-wrapper">
+        
+        <aside>
+            <div class="profile-img-wrapper">
+                <img src="assets/images/Profile.png" alt="profile">
+            </div>
+            <h1 class="profile-name">Rahul Ambaliya</h1>
+            <div class="text-center">
+                <span class="badge badge-white badge-pill profile-designation text-success blink_me">FRONT-END DEVELOPER</span>
+            </div>
+            <nav class="social-links">
+                <a href="https://www.linkedin.com/in/rahulambaliya/" class="social-link"><i class="fab fa-linkedin"></i></a>
+                <a href="skype:rahulrambaliya" class="social-link"><i class="fab fa-skype"></i></a>
+                <a href="https://github.com/rahulambaliya/" class="social-link"><i class="fab fa-github"></i></a>
+            </nav>
+            <div class="widget">
+                <h5 class="widget-title">personal information</h5>
+                <div class="widget-content" >
+                    <p><a href="javascript:void(0);" class="personal-link"><i class="fa fa-phone-square"></i></a> +1 873 288 3011</p>
+                    <p style="display:flex;"><a href="javascript:void(0);" class="personal-link"><i class="fa fa-envelope"></i></a> rahulambaliya93@gmail.com</p>
+                    <p><a href="javascript:void(0);" class="personal-link"><i class="fa fa-map-marker"></i></a> Ottawa, Ontario</p>
+                    <a href="assets/images/RAHUL's Resume.pdf"><button class="btn btn-download-cv btn-primary rounded-pill"> <img src="assets/images/download.svg" alt="download"
+                        class="btn-img">DOWNLOAD CV </button></a>
+                </div>
+            </div>
+            <div class="widget card">
+                <div class="card-body">
+                    <div class="widget-content">
+                        <h5 class="widget-title card-title">LANGUAGES</h5>
+                        <b>English</b>
+                        <p>Professional Working Proficiency.</p>
+                        <b>Gujarati</b>
+                        <p>Bilingual Proficiency.</p>
+                        <b>Hindi</b>
+                        <p>Bilingual Proficiency.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="widget card">
+                <div class="card-body">
+                    <div class="widget-content">
+                        <h5 class="widget-title card-title">INTERESTS</h5>
+                        <p>Music</p>
+                        <p>Cricket</p>
+                        <p>Traveling</p>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+    
+        <main>
+            <section class="contact-section">
+                <h2 class="section-title">GET IN TOUCH</h2>
+                <p class="mb-4">If you’d like to talk about a project, our work or anything else then get in touch.</p>
+                
+                <div class="contact-cards-wrapper">
+                    <div class="contact-card">
+                        <h6 class="contact-card-title">Call Us</h6>
+                        <p class="contact-card-content">+1 872 288 3011</p>
+                    </div>
+                    <div class="contact-card">
+                        <h6 class="contact-card-title">Email Us</h6>
+                        <p class="contact-card-content">rahulambaliya93@gmail.com</p>
+                    </div>
+                    <div class="contact-card">
+                        <h6 class="contact-card-title">Reach Us</h6>
+                        <p class="contact-card-content">134 Woodridge Crescent,Ottawa,ON</p>
+                    </div>
+                </div>
+
+                
+
+            </section>
+            <section class="location-section">
+                <h5 class="section-title">MY LOCATION</h5>
+
+                <div class="map-wrapper embed-responsive embed-responsive-16by9">
+                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.9615472763517!2d-75.81515938444633!3d45.349588479099914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce00e8545c38b7%3A0x3564c40dcc367291!2s134%20Woodridge%20Crescent%2C%20Nepean%2C%20ON%20K2B%207S9!5e0!3m2!1sen!2sca!4v1612417016457!5m2!1sen!2sca" width="600" height="800" frameborder="0" style="border:0;" allowfullscreen="" class="embed-responsive-item"></iframe>
+                </div>
+            </section>
+
+
+            <footer>Portfolio @ <a href="javascript:void(0);" target="_blank" rel="noopener noreferrer">Rahul Ambaliya</a>. All Rights Reserved 2021</footer>
+        </main>
+    </div>
+
+<script>
+
+    function blink_text() {
+       $('.blink_me').fadeOut(1500);
+       $('.blink_me').fadeIn(1000);
+   }
+   setInterval(blink_text, 2000);
+   </script>
+    <script src="assets/vendors/jquery/dist/jquery.min.js"></script>
+    <script src="assets/vendors/@popperjs/core/dist/umd/popper-base.min.js"></script>
+    <script src="assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/live-resume.js"></script>
+</body>
+
+</html>
+

@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Live Resume :: Portfolio</title>
+      <link href="https://fonts.googleapis.com/css?family=Mukta:300,400,500,600,700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="assets/vendors/@fortawesome/fontawesome-free/css/all.min.css">
+      <link rel="stylesheet" href="assets/css/live-resume.css">
+   </head>
+   <style>
+      .modal-header {
+      background-color: #55acee;
+      color: #ffffff;
+      }
+      .modal-header {
+      min-height: 16.43px;
+      padding: 15px;
+      border-bottom: 1px solid #e5e5e5; 
+      }
+      .modal-header .close {
+      font-weight: 300;
+      color: #ffffff;
+      text-shadow: none;
+      filter: alpha(opacity=100);
+      opacity: 1;
+      }
+      .btn-default {
+      color: #55acee;
+      border: 1px solid #cccccc;
+      }
+      .port-btn {
+      padding: 8px 15px;
+      font-size: 14px;
+      line-height: 1.4;
+      min-width: 160px;
+      text-align: center;
+      border-radius: 0;
+      -webkit-border-radius: 0;
+      -ms-border-radius: 0;
+      -moz-border-radius: 0;
+      -o-border-radius: 0;
+      text-transform: uppercase;
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -ms-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+      }
+      .port-btn:hover {
+      color: #ffffff;
+      background-color: #339beb;
+      border-color: #339beb;
+      }
+      .modal-title {
+      margin: 0;
+      line-height: 1.428571;
+      }
+      .modal-header h4 
+      {
+      font-size: 18px;
+      font-weight: 700;
+      }
+      .list-unstyled li {
+      padding: 3px 0;
+      }
+      .list-unstyled {
+      padding-left: 0;
+      list-style: none;
+      }
+      ul, ol {
+      margin-top: 0;
+      margin-bottom: 10px;
+      }
+      .pr-10 {
+      padding-right: 10px;
+      color:#5cb85c;
+      font-size:18px;
+      }
+   </style>
+   <body>
+      <header>
+         <button class="ml-auto mr-3 ml-md-0 mr-md-auto btn-header"><img src=""  class="btn-img"></button>
+         <nav class="collapsible-nav" id="collapsible-nav">
+            <a href="index.html" class="nav-link ">HOME</a>
+            <a href="portfolio.html" class="nav-link active">PORTFOLIO</a>
+            <a href="contact.html" class="nav-link">CONTACT</a>
+         </nav>
+         <button class="btn btn-menu-toggle btn-white rounded-circle" data-toggle="collapsible-nav"
+            data-target="collapsible-nav"><img src="assets/images/hamburger.svg" alt="hamburger"></button>
+      </header>
+      <div class="content-wrapper">
+         <aside>
+            <div class="profile-img-wrapper">
+               <img src="assets/images/Profile.png" alt="profile">
+            </div>
+            <h1 class="profile-name">Rahul Ambaliya</h1>
+            <div class="text-center">
+               <span class="badge badge-white badge-pill profile-designation text-success blink_me">FRONT-END DEVELOPER</span>
+            </div>
+            <nav class="social-links">
+               <a href="https://www.linkedin.com/in/rahulambaliya/" class="social-link"><i class="fab fa-linkedin"></i></a>
+               <a href="skype:rahulrambaliya" class="social-link"><i class="fab fa-skype"></i></a>
+               <a href="https://github.com/rahulambaliya/" class="social-link"><i class="fab fa-github"></i></a>
+            </nav>
+            <div class="widget">
+               <h5 class="widget-title">personal information</h5>
+               <div class="widget-content">
+                  <p><a href="javascript:void(0);" class="personal-link"><i class="fa fa-phone-square"></i></a> +1 873 288 3011</p>
+                  <p style="display:flex;"><a href="javascript:void(0);" class="personal-link"><i class="fa fa-envelope"></i></a> rahulambaliya93@gmail.com</p>
+                  <p><a href="javascript:void(0);" class="personal-link"><i class="fa fa-map-marker"></i></a> Ottawa, Ontario</p>
+                  <a href="assets/images/RAHUL's Resume.pdf"><button class="btn btn-download-cv btn-primary rounded-pill"> <img src="assets/images/download.svg" alt="download"
+                     class="btn-img">DOWNLOAD CV </button></a>
+               </div>
+            </div>
+            <div class="widget card">
+               <div class="card-body">
+                  <div class="widget-content">
+                     <h5 class="widget-title card-title">LANGUAGES</h5>
+                     <b>English</b>
+                        <p>Professional Working Proficiency.</p>
+                        <b>Gujarati</b>
+                        <p>Bilingual Proficiency.</p>
+                        <b>Hindi</b>
+                        <p>Bilingual Proficiency.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="widget card">
+               <div class="card-body">
+                  <div class="widget-content">
+                     <h5 class="widget-title card-title">INTERESTS</h5>
+                     <p>Music</p>
+                     <p>Cricket</p>
+                     <p>Traveling</p>
+                  </div>
+               </div>
+            </div>
+         </aside>
+         <main>
+            <section class="portfolio-section">
+               <h2 class="section-title">PORTFOLIO</h2>
+               <div class="portfolio-wrapper">
+
+                <!-- start project -->
+
+                  <figure class="portfolio-item hover-box" data-toggle="modal" data-target="#project01">
+                     <img src="assets/images/Cubber - Best Cashback Rewards Offer Online Shopping Website & App India.png" alt="project" class="portfolio-item-img">
+                     <figcaption class="portfolio-item-details overlay">
+                        <h5 class="portfolio-item-title">CUBBER</h5>
+                        <p class="portfolio-item-description">PHP, WEB</p>
+                     </figcaption>
+                  </figure>
+                  
+                  <div class="modal fade" id="project01" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                     <div class="modal-dialog modal-xl" role="document">
+                        <div class="modal-content">
+                           <div class="modal-header">
+                              <h4 class="modal-title" id="exampleModalLabel">PROJECT NAME : CUBBER</h4>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                              </button>
+                           </div>
+                           <div class="modal-body">
+                              <div class="row">
+                                 <div class="col-md-4">
+                                    <h2 class="section-title" style="margin-bottom: 1rem;">Technologies used</h2>
+                                    <ul class="list-unstyled">
+                                       <li><i class="fa fa-check-circle pr-10 project-icon"></i>Custom Grid Layout</li>
+                                       <li><i class="fa fa-check-circle pr-10 project-icon"></i>HTML</li>
+                                       <li><i class="fa fa-check-circle pr-10 project-icon"></i>CSS</li>
+                                       <li><i class="fa fa-check-circle pr-10 project-icon"></i>Bootstrap</li>
+                                       <li><i class="fa fa-check-circle pr-10 project-icon"></i>jQuery</li>
+                                       <li><i class="fa fa-check-circle pr-10 project-icon"></i>AJAX</li>
+                                       <li><i class="fa fa-check-circle pr-10 project-icon"></i>JavaScript</li>
+                                       <li><i class="fa fa-check-circle pr-10 project-icon"></i>Codeigniter</li>
+                                       <li><i class="fa fa-check-circle pr-10 project-icon"></i>MY SQL</li>
+                                       <li><i class="fa fa-check-circle pr-10 project-icon"></i>Rest API</li>
+                                    </ul>
+                                 </div>
+                                 <div class="col-md-8">
+                                    <section class="intro-section">
+                                       <h2 class="section-title">description</h2>
+                                       <p>Once you are registered on Cubber, you need to ensure that you are a Prime member of Cubber to be eligible for cashbacks on online purchases. However, you will still receive products at a discounted rate or with offers whenever you shop through Cubber. Cubber lets you know exactly where the discounts are and you can place your orders accordingly. You can either download the Cubber app or place orders from there or you can place orders through Shop.cubber.in. We regularly ensure that all the latest offers from various websites are clearly stated on Cubber so that you can choose the right online offer or discount accordingly.</p>
+                                       <p><a href="http://shop.cubber.in/" class="btn btn-sm btn-primary port-btn" target="_blank">Visit Site</a></p>
+                                    </section>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="modal-footer">
+                              <button type="button" class="btn btn-sm btn-default port-btn" data-dismiss="modal">Close</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <!-- ens project -->
+
+
+                  <!-- start project -->
+                  <figure class="portfolio-item hover-box" data-toggle="modal" data-target="#project02">
+                     <img src="assets/images/zibaandco.jpg" alt="project" class="portfolio-item-img">
+                     <figcaption class="portfolio-item-details overlay">
+                        <h5 class="portfolio-item-title">ZIBA & CO</h5>
+                        <p class="portfolio-item-description">PHP, WEB</p>
+                     </figcaption>
+                  </figure>
+                  
+                  <div class="modal fade" id="project02" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                     <div class="modal-dialog modal-xl" role="document">
+                        <div class="modal-content">
+                           <div class="modal-header">
+                              <h4 class="modal-title" id="exampleModalLabel">PROJECT NAME : ZIBA & CO</h4>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                              </button>
+                           </div>
+                           <div class="modal-body">
+                              <div class="row">
+                                 <div class="col-md-4">
+                                    <h2 class="section-title" style="margin-bottom: 1rem;">Technologies used</h2>
+                                    <ul class="list-unstyled">
+                                       <li><i class="fa fa-check-circle pr-10 project-icon"></i>Custom Grid Layout</li>
+                                       <li><i class="fa fa-check-circle pr-10 project-icon"></i>HTML</li>
+                                       <li><i class="fa fa-check-circle pr-10 project-icon"></i>CSS</li>
+                                       <li><i class="fa fa-check-circle pr-10 project-icon"></i>Bootstrap</li>
+                                       <li><i class="fa fa-check-circle pr-10 project-icon"></i>AJAX/jQuery</li>
+                                       <li><i class="fa fa-check-circle pr-10 project-icon"></i>JavaScript</li>
+                                       <li><i class="fa fa-check-circle pr-10 project-icon"></i>Codeigniter</li>
+                                       <li><i class="fa fa-check-circle pr-10 project-icon"></i>MY SQL</li>
+                                       
+                                    </ul>
+                                 </div>
+                                 <div class="col-md-8">
+                                    <section class="intro-section">
+                                       <h2 class="section-title">description</h2>
+                                       <p>Founded in 2002 ZIBA & CO is online retailer of finest quality diamonds certified by the most respected independent diamond grading labs. By providing finest quality certified diamond at competitive price, a large selection to choose a choice diamond and superior customer service, ZIBA & CO have catch attention from all over world and make flawless relation with our clients. The company is built on a unique idea of customer to choose right diamond of their choice.</p>
+                                       <p><a href="https://zibaandco.com.au/" class="btn btn-sm btn-primary port-btn" target="_blank">Visit Site</a></p>
+                                    </section>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="modal-footer">
+                              <button type="button" class="btn btn-sm btn-default port-btn" data-dismiss="modal">Close</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <!-- end project -->
+
+                  <!-- start project -->
+
+                  <figure class="portfolio-item hover-box" data-toggle="modal" data-target="#project07">
+                    <img src="assets/images/mht.png" alt="project" class="portfolio-item-img">
+                    <figcaption class="portfolio-item-details overlay">
+                       <h5 class="portfolio-item-title">PROJECT NAME : MHT - SCHOOL MANAGEMENT SYSTEM</h5>
+                       <p class="portfolio-item-description">PHP, WEB</p>
+                    </figcaption>
+                 </figure>
+
+                 <div class="modal fade" id="project07" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl" role="document">
+                       <div class="modal-content">
+                          <div class="modal-header">
+                             <h4 class="modal-title" id="exampleModalLabel">MHT - SCHOOL MANAGEMENT SYSTEM</h4>
+                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                             <span aria-hidden="true">&times;</span>
+                             </button>
+                          </div>
+                          <div class="modal-body">
+                             <div class="row">
+                                <div class="col-md-4">
+                                   <h2 class="section-title" style="margin-bottom: 1rem;">Technologies used</h2>
+                                   <ul class="list-unstyled">
+                                      <li><i class="fa fa-check-circle pr-10 project-icon"></i>Custom Grid Layout</li>
+                                      <li><i class="fa fa-check-circle pr-10 project-icon"></i>HTML</li>
+                                       <li><i class="fa fa-check-circle pr-10 project-icon"></i>CSS</li>
+                                       <li><i class="fa fa-check-circle pr-10 project-icon"></i>Bootstrap</li>
+                                       <li><i class="fa fa-check-circle pr-10 project-icon"></i>jQuery</li>
+                                       <li><i class="fa fa-check-circle pr-10 project-icon"></i>AJAX</li>
+                                      <li><i class="fa fa-check-circle pr-10 project-icon"></i>JavaScript</li>
+                                      <li><i class="fa fa-check-circle pr-10 project-icon"></i>PHP</li>
+                                      <li><i class="fa fa-check-circle pr-10 project-icon"></i>MY SQL</li>
+                                    
+                                   </ul>
+                                </div>
+                                <div class="col-md-8">
+                                   <section class="intro-section">
+                                      <h2 class="section-title">description</h2>
+                                      <p>Started as an individual project including researching to testing and diligently completed features like integrated modern UI for Staff, Student and Parents access portal.Making sure to implement the logic that can be reused to meets the client's requirements and testing and bug fixing to improve the user's experience.</p>
+                                      <p class="alert-danger text-center">NOTE : THIS PROJECT ALL MODULES ARE ADMINSIDE.</p>
+                                   </section>
+                                </div>
+                             </div>
+                          </div>
+                          <div class="modal-footer">
+                             <button type="button" class="btn btn-sm btn-default port-btn" data-dismiss="modal">Close</button>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+
+                 <figure class="portfolio-item hover-box" data-toggle="modal" data-target="#project05">
+                    <img src="assets/images/phamtec.png" alt="project" class="portfolio-item-img">
+                    <figcaption class="portfolio-item-details overlay">
+                       <h5 class="portfolio-item-title">PROJECT NAME : PHAMTEC INC</h5>
+                       <p class="portfolio-item-description">PHP, WEB</p>
+                    </figcaption>
+                 </figure>
+                 <!-- project05 -->
+                 <div class="modal fade" id="project05" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl" role="document">
+                       <div class="modal-content">
+                          <div class="modal-header">
+                             <h4 class="modal-title" id="exampleModalLabel">PHAMTEC INC</h4>
+                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                             <span aria-hidden="true">&times;</span>
+                             </button>
+                          </div>
+                          <div class="modal-body">
+                             <div class="row">
+                                <div class="col-md-4">
+                                   <h2 class="section-title" style="margin-bottom: 1rem;">Technologies used</h2>
+                                   <ul class="list-unstyled">
+                                      <li><i class="fa fa-check-circle pr-10 project-icon"></i>Custom Admin Theme</li>
+                                      <li><i class="fa fa-check-circle pr-10 project-icon"></i>HTML</li>
+                                      <li><i class="fa fa-check-circle pr-10 project-icon"></i>CSS</li>
+                                      <li><i class="fa fa-check-circle pr-10 project-icon"></i>Bootstrap</li>
+                                      <li><i class="fa fa-check-circle pr-10 project-icon"></i>jQuery</li>
+                                      <li><i class="fa fa-check-circle pr-10 project-icon"></i>AJAX</li>
+                                      <li><i class="fa fa-check-circle pr-10 project-icon"></i>JavaScript</li>
+                                      <li><i class="fa fa-check-circle pr-10 project-icon"></i>PHP</li>
+                                      <li><i class="fa fa-check-circle pr-10 project-icon"></i>MY SQL</li>
+
+                                   </ul>
+                                </div>
+                                <div class="col-md-8">
+                                   <section class="intro-section">
+                                      <h2 class="section-title">description</h2>
+                                      <p>Phamtec is growing into a mechanical design, manufacturing and assembly company. His future goal is to be able to add e-commerce as part of the company's capabilities providing additional services and to sell more generic mechanical components to customers beyond our physical location limitations.                    </p>
+                                      <p><a href="http://www.phamtec.com/" class="btn btn-sm btn-primary port-btn" target="_blank">Visit Site</a></p>
+                                      <p class="alert-danger text-center">NOTE : THIS PROJECT ALL MODULES ARE ADMINSIDE.</p>
+                                   </section>
+                                </div>
+                             </div>
+                          </div>
+                          <div class="modal-footer">
+                             <button type="button" class="btn btn-sm btn-default port-btn" data-dismiss="modal">Close</button>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+
+                  <figure class="portfolio-item hover-box" data-toggle="modal" data-target="#project03">
+                     <img src="assets/images/Home - Dhartiagro.png" alt="project" class="portfolio-item-img">
+                     <figcaption class="portfolio-item-details overlay">
+                        <h5 class="portfolio-item-title">PROJECT NAME : DHARTI AGRO</h5>
+                        <p class="portfolio-item-description">PHP, WEB</p>
+                     </figcaption>
+                  </figure>
+                  <!-- project03 -->
+                  <div class="modal fade" id="project03" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                     <div class="modal-dialog modal-xl" role="document">
+                        <div class="modal-content">
+                           <div class="modal-header">
+                              <h4 class="modal-title" id="exampleModalLabel">DHARTI AGRO</h4>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                              </button>
+                           </div>
+                           <div class="modal-body">
+                              <div class="row">
+                                 <div class="col-md-4">
+                                    <h2 class="section-title" style="margin-bottom: 1rem;">Technologies used</h2>
+                                    <ul class="list-unstyled">
+                                      <li><i class="fa fa-check-circle pr-10 project-icon"></i>HTML</li>
+                                      <li><i class="fa fa-check-circle pr-10 project-icon"></i>CSS</li>
+                                      <li><i class="fa fa-check-circle pr-10 project-icon"></i>Bootstrap</li>
+                                      <li><i class="fa fa-check-circle pr-10 project-icon"></i>jQuery</li>
+                                      <li><i class="fa fa-check-circle pr-10 project-icon"></i>AJAX</li>
+                                      <li><i class="fa fa-check-circle pr-10 project-icon"></i>JavaScript</li>
+                                      <li><i class="fa fa-check-circle pr-10 project-icon"></i>PSD to HTML</li>
+                                    </ul>
+                                 </div>
+                                 <div class="col-md-8">
+                                    <section class="intro-section">
+                                       <h2 class="section-title">description</h2>
+                                       <p>Dharti Agro Engineering is a reliable Manufacturer and Supplier of Agriculture Equipment. Dharti Agro are manufacturing various range and Models of Automatic Seed Drill & Planter which can use with different types of Tractors and different types of Agriculture Land.                    </p>
+                                       <p><a href="https://dhartiagro.net/" class="btn btn-sm btn-primary port-btn" target="_blank">Visit Site</a></p>
+                                    </section>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="modal-footer">
+                              <button type="button" class="btn btn-sm btn-default port-btn" data-dismiss="modal">Close</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <figure class="portfolio-item hover-box" data-toggle="modal" data-target="#project04">
+                     <img src="assets/images/Modernmoviee PVT LTD.png" alt="project" class="portfolio-item-img">
+                     <figcaption class="portfolio-item-details overlay">
+                        <h5 class="portfolio-item-title">PROJECT NAME : MODERN MOVIEE PVT. LTD</h5>
+                        <p class="portfolio-item-description">PHP, WEB</p>
+                     </figcaption>
+                  </figure>
+                  <!-- project04 -->
+                  <div class="modal fade" id="project04" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                     <div class="modal-dialog modal-xl" role="document">
+                        <div class="modal-content">
+                           <div class="modal-header">
+                              <h4 class="modal-title" id="exampleModalLabel">MODERN MOVIEE PVT. LTD</h4>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                              </button>
+                           </div>
+                           <div class="modal-body">
+                              <div class="row">
+                                 <div class="col-md-4">
+                                    <h2 class="section-title" style="margin-bottom: 1rem;">Technologies used</h2>
+                                    <ul class="list-unstyled">
+                                       <li><i class="fa fa-check-circle pr-10 project-icon"></i>HTML</li>
+                                       <li><i class="fa fa-check-circle pr-10 project-icon"></i>CSS</li>
+                                       <li><i class="fa fa-check-circle pr-10 project-icon"></i>JavaScript</li>
+                                       <li><i class="fa fa-check-circle pr-10 project-icon"></i>jQuery</li>
+                                       <li><i class="fa fa-check-circle pr-10 project-icon"></i>AJAX</li>
+                                    </ul>
+                                 </div>
+                                 <div class="col-md-8">
+                                    <section class="intro-section">
+                                       <h2 class="section-title">description</h2>
+                                       <p>To produce best Quality Entertainment Programs with innovative subjects at minimum costs and market the company’s products and services in domestic and international markets involving innovative strategies.To establish the company in the forefront of the Media and Entertainment Industry.</p>
+                                       <p><a href="http://www.modernmoviee.com/" class="btn btn-sm btn-primary port-btn" target="_blank">Visit Site</a></p>
+                                    </section>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="modal-footer">
+                              <button type="button" class="btn btn-sm btn-default port-btn" data-dismiss="modal">Close</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  
+
+                  <figure class="portfolio-item hover-box" data-toggle="modal" data-target="#project06">
+                     <img src="assets/images/China Performance Group China Sourcing Management Company – Sourcing Specialist.png" alt="project" class="portfolio-item-img">
+                     <figcaption class="portfolio-item-details overlay">
+                        <h5 class="portfolio-item-title">PROJECT NAME : CHINA PERFORMANCE GROUP</h5>
+                        <p class="portfolio-item-description">STATIC WEB PAGE, HTML,CSS,JS,JQUERY</p>
+                     </figcaption>
+                  </figure>
+
+                
+                  <div class="modal fade" id="project06" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                     <div class="modal-dialog modal-xl" role="document">
+                        <div class="modal-content">
+                           <div class="modal-header">
+                              <h4 class="modal-title" id="exampleModalLabel">CHINA PERFORMANCE GROUP</h4>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                              </button>
+                           </div>
+                           <div class="modal-body">
+                              <div class="row">
+                                 <div class="col-md-4">
+                                    <h2 class="section-title" style="margin-bottom: 1rem;">Technologies used</h2>
+                                    <ul class="list-unstyled">
+                                      <li><i class="fa fa-check-circle pr-10 project-icon"></i>HTML</li>
+                                      <li><i class="fa fa-check-circle pr-10 project-icon"></i>CSS</li>
+                                      <li><i class="fa fa-check-circle pr-10 project-icon"></i>Bootstrap</li>
+                                      <li><i class="fa fa-check-circle pr-10 project-icon"></i>jQuery</li>
+                                      <li><i class="fa fa-check-circle pr-10 project-icon"></i>AJAX</li>
+                                      <li><i class="fa fa-check-circle pr-10 project-icon"></i>JavaScript</li>
+                                      
+                                    </ul>
+                                 </div>
+                                 <div class="col-md-8">
+                                    <section class="intro-section">
+                                       <h2 class="section-title">description</h2>
+                                       <p>Growing with China since 1978China Performance Group is a full service sourcing provider focused on and operating in China since 1978. We operate out of our US headquarters conveniently located in New Jersey, near New York City, and our main China office in Beijing. CPG’s network of partners and consultants span across China. Our customer base is worldwide with most clients based in the US, Europe, and Australia. CPG developed according to a prevailing code and mission which its business is still based on today. Read about CPG’s Mission.                    </p>
+                                       <p><a href="https://www.chinaperformancegroup.com/" class="btn btn-sm btn-primary port-btn" target="_blank">Visit Site</a></p>
+                                    </section>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="modal-footer">
+                              <button type="button" class="btn btn-sm btn-default port-btn" data-dismiss="modal">Close</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  
+
+               </div>
+            </section>
+            <footer>Portfolio @ <a href="javascript:void(0);" target="_blank" rel="noopener noreferrer">Rahul Ambaliya</a>. All Rights Reserved 2021</footer>
+         </main>
+      </div>
+      <script>
+         function blink_text() {
+            $('.blink_me').fadeOut(1500);
+            $('.blink_me').fadeIn(1000);
+         }
+         setInterval(blink_text, 2000);
+      </script>
+      <script src="assets/vendors/jquery/dist/jquery.min.js"></script>
+      <script src="assets/vendors/@popperjs/core/dist/umd/popper-base.min.js"></script>
+      <script src="assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+      <script src="assets/js/live-resume.js"></script>
+   </body>
+</html>
