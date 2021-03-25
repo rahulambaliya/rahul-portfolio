@@ -7656,7 +7656,7 @@ header {
 
 aside {
   padding-right: 57px;
-  min-width: 240px; }
+  min-width: 300px; }
   @media (max-width: 767px) {
     aside {
       width: 100%;
