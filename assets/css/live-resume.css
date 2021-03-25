@@ -7722,7 +7722,7 @@ main {
         height: 10px;
         border-radius: 50%;
         background-color: #979797; }
-      main .time-line-item:nth-child(2n)::after {
+      main .time-line-item:nth-child(1n)::after {
         background-color: #5cb85c; }
       main .time-line-item:not(:first-child)::after {
         top: 5px; }
