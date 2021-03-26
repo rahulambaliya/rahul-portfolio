@@ -31,8 +31,8 @@
             </div>
             <h1 class="profile-name">Rahul Ambaliya</h1>
             <div class="text-center">
-                <span class="badge badge-white badge-pill profile-designation blink_me1">WEB DEVELOPER</span>
-                <span class="badge badge-white badge-pill profile-designation blink_me2" style="display:none;">WEB DESIGNER</span>
+                <span class="badge badge-white badge-pill profile-designation blink_me">WEB DEVELOPER</span>
+            
             </div>
             <nav class="social-links">
                 <a href="https://www.linkedin.com/in/rahulambaliya/" class="social-link"><i class="fab fa-linkedin"></i></a>
@@ -303,12 +303,9 @@ Looking for a suitable front-end developer position with a ambitious & exciting 
 
 <script>
     
-
-    function blink_text() {
-       $('.blink_me1').fadeOut(1000);
-       $('.blink_me2').fadeIn(1500);
-       $('.blink_me1').fadeIn(2000);
-        $('.blink_me2').fadeOut(2500);
+function blink_text() {
+       $('.blink_me').fadeOut(1500);
+       $('.blink_me').fadeIn(1000);
    }
    setInterval(blink_text, 2000);
    </script>
