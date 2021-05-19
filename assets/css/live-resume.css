@@ -7928,12 +7928,14 @@ main {
         background-color: rgba(0, 0, 0, 0.42);
         color: #ffffff; }
       main .portfolio-wrapper .portfolio-item-title {
-        font-size: 10px;
+        font-size: 18px;
+        text-align:center;
         font-weight: 700;
         line-height: 1;
         margin-bottom: 5px; }
       main .portfolio-wrapper .portfolio-item-description {
-        font-size: 10px;
+        font-size: 14px;
+        text-align:center;
         line-height: 1;
         margin-bottom: 0; }
   main .blog-section {
